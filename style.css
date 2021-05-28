@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+button {
+  font-family: 'Spartan', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(222, 26%, 31%);
+}
+
+.calculadora {
+  max-width: 430px;
+}
+
+/* Topo */
+
+.numeros-topo {
+  color: white;
+  font-size: 0.6rem;
+  letter-spacing: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.calc-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc-topo #logo {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.tema {
+  display: flex;
+  align-items: center;
+}
+
+.tema span {
+  color: white;
+  text-transform: uppercase;
+  font-size: .6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+
+  margin-right: 15px;
+}
+
+.powerbutton {
+  width: 3.5rem;
+  height: 1.3rem;
+  background: hsl(223, 31%, 20%);
+  border-radius: 32px;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#powerbutton {
+  display: none;
+}
+
+.toggle {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: hsl(6, 63%, 50%);
+  border-radius: 32px;
+  display: block;
+  cursor: pointer;
+  margin-left: 4px;
+
+  display: inline-block;
+	position: relative;
+	transition: all ease-in-out 0.3s;
+}
+
+/* Visor */
+
+#visor {
+  max-width: 430px;
+  height: 80px;
+  background: hsl(224, 36%, 15%);
+  border-radius: 0.4rem;
+  border: 0;
+  margin: 20px 0 20px 0;
+  padding: 10px 30px 10px 30px;
+  box-sizing: border-box;
+
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+  font-family: 'Spartan', sans-serif;
+  text-align: right;
+}
+
+/* Botões */
+
+.fundo-botoes {
+  background-color: hsl(223, 31%, 20%);
+  padding: 15px;
+  border-radius: .4rem;
+}
+
+.linha-um {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.linha-dois {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.linha-tres {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.linha-quatro {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.linha-cinco {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.calc-botao {
+  width: 80px;
+  height: 50px;
+  margin: 10px;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: .6rem;
+  border: 0;
+  color: hsl(221, 14%, 31%);
+  cursor: pointer;
+  box-shadow: 0 3px rgb(129, 129, 129);
+}
+
+.calc-botao:hover {
+  filter: brightness(80%);
+  color: hsl(217, 14%, 19%);
+}
+
+.calc-botao.azul, .calc-botao.config {
+  font-size: 1rem;
+}
+
+.calc-botao.config {
+  width: 100%;
+}
+
+.calc-botao.azul, .calc-botao.reset {
+  background: hsl(225, 21%, 49%);
+  box-shadow: 0 3px hsl(224, 28%, 35%);
+  color: white;
+}
+
+.calc-botao.igual {
+  background: hsl(6, 63%, 50%);
+  box-shadow: 0 3px hsl(6, 70%, 34%);
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .calculadora {
+    max-width: 350px;
+  }
+
+  #visor {
+    max-width: 350px;
+  }
+}
+
+

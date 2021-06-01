@@ -55,7 +55,7 @@ function calcularComEnter() {
 const tema1 = document.getElementById('tema-1')
 const tema2 = document.getElementById('tema-2')
 const tema3 = document.getElementById('tema-3')
-const fundo = document.querySelector('.visor')
+const fundo = document.querySelector('html')
 
 tema1.addEventListener('change', (e) => {
   fundo.classList.remove('tema-2')

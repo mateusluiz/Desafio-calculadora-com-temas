@@ -1,14 +1,16 @@
 :root {
   --container-fundo: hsl(222, 26%, 31%);
   --logo-fonte-cor: white;
+
   --theme-fonte-cor: white;
   --tema-numeros-cor: white;
   --tema-fundo: hsl(223, 31%, 20%);
   --tema-check: hsl(6, 63%, 50%);
+
   --visor-background: hsl(224, 36%, 15%);
   --visor-fonte: white;
-  --botoes-background: hsl(223, 31%, 20%);
 
+  --botoes-background: hsl(223, 31%, 20%);
   --botoes-geral-fundo: white;
   --botoes-geral-shadow: 0 3px rgb(129, 129, 129);
   --botoes-geral-cor: hsl(221, 14%, 31%);
@@ -21,6 +23,87 @@
   --botoes-igual-fundo: hsl(6, 63%, 50%);
   --botoes-igual-shadow: 0 3px hsl(6, 70%, 34%);
   --botoes-igual-fonte-cor: white;
+}
+
+.tema-1:root {
+  --container-fundo: hsl(222, 26%, 31%);
+  --logo-fonte-cor: white;
+
+  --theme-fonte-cor: white;
+  --tema-numeros-cor: white;
+  --tema-fundo: hsl(223, 31%, 20%);
+  --tema-check: hsl(6, 63%, 50%);
+
+  --visor-background: hsl(224, 36%, 15%);
+  --visor-fonte: white;
+
+  --botoes-background: hsl(223, 31%, 20%);
+  --botoes-geral-fundo: white;
+  --botoes-geral-shadow: 0 3px rgb(129, 129, 129);
+  --botoes-geral-cor: hsl(221, 14%, 31%);
+  --botoes-geral-hover: hsl(217, 14%, 19%);
+
+  --botoes-del-reset-fundo: hsl(225, 21%, 49%);
+  --botoes-del-reset-shadow: 0 3px hsl(224, 28%, 35%);
+  --botoes-del-reset-fonte-cor: white;
+
+  --botoes-igual-fundo: hsl(6, 63%, 50%);
+  --botoes-igual-shadow: 0 3px hsl(6, 70%, 34%);
+  --botoes-igual-fonte-cor: white;
+}
+
+.tema-2:root {
+  --container-fundo: hsl(0, 0%, 93%);
+  --logo-fonte-cor: hsl(60, 10%, 19%);
+
+  --theme-fonte-cor: hsl(60, 10%, 19%);
+  --tema-numeros-cor: hsl(60, 10%, 19%);
+  --tema-fundo: hsl(0, 5%, 81%);
+  --tema-check: hsl(6, 63%, 50%);
+
+  --visor-background: white;
+  --visor-fonte: hsl(60, 10%, 19%);
+
+  --botoes-background: hsl(0, 5%, 81%);
+  --botoes-geral-fundo: hsl(45, 7%, 89%);
+  --botoes-geral-shadow: 0 3px hsl(35, 11%, 61%);
+  --botoes-geral-cor: hsl(60, 10%, 19%);
+  --botoes-geral-hover: hsl(217, 14%, 19%);
+
+  --botoes-del-reset-fundo: hsl(185, 42%, 37%);
+  --botoes-del-reset-shadow: 0 3px hsl(185, 58%, 25%);
+  --botoes-del-reset-fonte-cor: white;
+
+  --botoes-igual-fundo: hsl(25, 98%, 40%);
+  --botoes-igual-shadow: 0 3px hsl(25, 99%, 27%);
+  --botoes-igual-fonte-cor: white;
+}
+
+.tema-3:root {
+  --container-fundo: hsl(268, 75%, 9%);
+  --logo-fonte-cor: hsl(52, 100%, 62%);
+  
+  --theme-fonte-cor: hsl(52, 100%, 62%);
+  --tema-numeros-cor: hsl(52, 100%, 62%);
+  --tema-fundo: hsl(268, 69%, 20%);
+  --tema-check: hsl(176, 100%, 44%);
+
+  --visor-background: hsl(268, 71%, 12%);
+  --visor-fonte: hsl(52, 100%, 62%);
+
+  --botoes-background: hsl(268, 71%, 12%);
+  --botoes-geral-fundo: hsl(268, 47%, 21%);
+  --botoes-geral-shadow: 0 3px hsl(290, 70%, 36%);
+  --botoes-geral-cor: hsl(52, 100%, 62%);
+  --botoes-geral-hover: hsl(217, 14%, 19%);
+
+  --botoes-del-reset-fundo: hsl(281, 89%, 26%);
+  --botoes-del-reset-shadow: 0 3px hsl(285, 91%, 52%);
+  --botoes-del-reset-fonte-cor: white;
+
+  --botoes-igual-fundo: hsl(176, 100%, 44%);
+  --botoes-igual-shadow: 0 3px hsl(177, 92%, 70%);
+  --botoes-igual-fonte-cor: black;
 }
 
 body {
@@ -134,7 +217,7 @@ button {
   text-align: right;
 }
 
-.visor.tema-1 {
+/* .visor.tema-1 {
   background: black;
 }
 
@@ -144,7 +227,7 @@ button {
 
 .visor.tema-3 {
   background: grey;
-}
+} */
 
 /* Botões */
 

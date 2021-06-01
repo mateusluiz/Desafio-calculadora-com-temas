@@ -1,3 +1,28 @@
+:root {
+  --container-fundo: hsl(222, 26%, 31%);
+  --logo-fonte-cor: white;
+  --theme-fonte-cor: white;
+  --tema-numeros-cor: white;
+  --tema-fundo: hsl(223, 31%, 20%);
+  --tema-check: hsl(6, 63%, 50%);
+  --visor-background: hsl(224, 36%, 15%);
+  --visor-fonte: white;
+  --botoes-background: hsl(223, 31%, 20%);
+
+  --botoes-geral-fundo: white;
+  --botoes-geral-shadow: 0 3px rgb(129, 129, 129);
+  --botoes-geral-cor: hsl(221, 14%, 31%);
+  --botoes-geral-hover: hsl(217, 14%, 19%);
+
+  --botoes-del-reset-fundo: hsl(225, 21%, 49%);
+  --botoes-del-reset-shadow: 0 3px hsl(224, 28%, 35%);
+  --botoes-del-reset-fonte-cor: white;
+
+  --botoes-igual-fundo: hsl(6, 63%, 50%);
+  --botoes-igual-shadow: 0 3px hsl(6, 70%, 34%);
+  --botoes-igual-fonte-cor: white;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +39,7 @@ button {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: hsl(222, 26%, 31%);
+  background-color: var(--container-fundo);
 }
 
 .calculadora {
@@ -24,7 +49,7 @@ button {
 /* Topo */
 
 .numeros-topo {
-  color: white;
+  color: var(--tema-numeros-cor);
   font-size: 0.6rem;
   letter-spacing: 10px;
   display: flex;
@@ -38,18 +63,20 @@ button {
 }
 
 .calc-topo #logo {
-  color: white;
+  color: var(--logo-fonte-cor);
   font-weight: 700;
   font-size: 1.5rem;
 }
 
-.tema {
+/* Opção de temas */
+
+.theme {
   display: flex;
   align-items: center;
 }
 
-.tema span {
-  color: white;
+.theme span {
+  color: var(--theme-fonte-cor);
   text-transform: uppercase;
   font-size: .6rem;
   font-weight: 600;
@@ -58,10 +85,10 @@ button {
   margin-right: 15px;
 }
 
-.powerbutton {
+.temas-checkbox{
   width: 3.5rem;
   height: 1.3rem;
-  background: hsl(223, 31%, 20%);
+  background: var(--tema-fundo);
   border-radius: 32px;
 
   display: flex;
@@ -69,14 +96,15 @@ button {
   position: relative;
 }
 
-#powerbutton {
+#tema-1, #tema-2, #tema-3 {
   display: none;
+  /* appearance: none; */
 }
 
-.toggle {
+.temas-checkbox label {
   width: 0.8rem;
   height: 0.8rem;
-  background-color: hsl(6, 63%, 50%);
+  background-color: var(--tema-check);
   border-radius: 32px;
   display: block;
   cursor: pointer;
@@ -89,10 +117,10 @@ button {
 
 /* Visor */
 
-#visor {
+.visor {
   max-width: 430px;
   height: 80px;
-  background: hsl(224, 36%, 15%);
+  background: var(--visor-background);
   border-radius: 0.4rem;
   border: 0;
   margin: 20px 0 20px 0;
@@ -100,16 +128,28 @@ button {
   box-sizing: border-box;
 
   font-size: 2.5rem;
-  color: white;
+  color: var(--visor-fonte);
   font-weight: 700;
   font-family: 'Spartan', sans-serif;
   text-align: right;
 }
 
+.visor.tema-1 {
+  background: black;
+}
+
+.visor.tema-2 {
+  background: white;
+}
+
+.visor.tema-3 {
+  background: grey;
+}
+
 /* Botões */
 
 .fundo-botoes {
-  background-color: hsl(223, 31%, 20%);
+  background-color: var(--botoes-background);
   padding: 15px;
   border-radius: .4rem;
 }
@@ -148,17 +188,18 @@ button {
   font-weight: 700;
   border-radius: .6rem;
   border: 0;
-  color: hsl(221, 14%, 31%);
+  color: var(--botoes-geral-cor);
+  background: var(--botoes-geral-fundo);
   cursor: pointer;
-  box-shadow: 0 3px rgb(129, 129, 129);
+  box-shadow: var(--botoes-geral-shadow);
 }
 
 .calc-botao:hover {
   filter: brightness(80%);
-  color: hsl(217, 14%, 19%);
+  color: var(--botoes-geral-hover);
 }
 
-.calc-botao.azul, .calc-botao.config {
+.calc-botao.del, .calc-botao.config {
   font-size: 1rem;
 }
 
@@ -166,16 +207,16 @@ button {
   width: 100%;
 }
 
-.calc-botao.azul, .calc-botao.reset {
-  background: hsl(225, 21%, 49%);
-  box-shadow: 0 3px hsl(224, 28%, 35%);
-  color: white;
+.calc-botao.del, .calc-botao.reset {
+  background: var(--botoes-del-reset-fundo);
+  box-shadow: var(--botoes-del-reset-shadow);
+  color: var(--botoes-del-reset-fonte-cor);
 }
 
 .calc-botao.igual {
-  background: hsl(6, 63%, 50%);
-  box-shadow: 0 3px hsl(6, 70%, 34%);
-  color: white;
+  background: var(--botoes-igual-fundo);
+  box-shadow: var(--botoes-igual-shadow);
+  color: var(--botoes-igual-fonte-cor);
 }
 
 @media (max-width: 500px) {

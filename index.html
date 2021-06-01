@@ -23,17 +23,21 @@
       </div>
       <div class="calc-topo">
         <span id="logo">calc</span>
-        <div class="tema">
+        <div class="theme">
           <span>theme</span>
-          <div class="powerbutton">
-            <input type="checkbox" name="theme" id="powerbutton">
-            <label for="powerbutton" class="toggle"></label>
+          <div class="temas-checkbox">
+            <input type="radio" name="state" id="tema-1">
+            <label for="tema-1" class="label-1"></label>
+            <input type="radio" name="state" id="tema-2">
+            <label for="tema-2" class="label-2"></label>
+            <input type="radio" name="state" id="tema-3">
+            <label for="tema-3" class="label-3"></label>
           </div>
         </div>
       </div>
 
       <div class="calc-visor">
-        <input type="text" name="visor" id="visor">
+        <input type="text" name="visor" id="visor" class="visor">
       </div>
 
       <div class="fundo-botoes">
@@ -41,7 +45,7 @@
           <button class="calc-botao branco" onclick="inserir(7)">7</button>
           <button class="calc-botao branco" onclick="inserir(8)">8</button>
           <button class="calc-botao branco" onclick="inserir(9)">9</button>
-          <button class="calc-botao azul" onclick="deletar()">DEL</button>
+          <button class="calc-botao del" onclick="deletar()">DEL</button>
         </div>
         <div class="linha-dois">
           <button class="calc-botao branco" onclick="inserir(4)">4</button>

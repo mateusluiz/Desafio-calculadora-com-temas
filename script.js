@@ -18,23 +18,6 @@ function limpar() {
 }
 
 function calcular() {
-  // switch(calculo) {
-  //   case '+':
-  //     // soma
-  //     break;
-  //   case '-':
-  //     // subtrair
-  //     break;
-  //   case '/':
-  //     // divisão
-  //     break;
-  //   case '*':
-  //     // multiplicação
-  //     break;
-  //   default:
-  //     console.log('Erro no switch')
-  // }
-
   if(visor.value) {
     visor.value = eval(visor.value)
   }
